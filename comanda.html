@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandă Pizza</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Comandă Pizza</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="comanda.html">Comandă</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="submit_order.php" method="POST">
+            <fieldset>
+                <legend>Selectați Pizza</legend>
+                <label><input type="checkbox" name="pizza" value="Margherita"> Pizza Margherita</label><br>
+                <label><input type="checkbox" name="pizza" value="Pepperoni"> Pizza Pepperoni</label><br>
+                <label><input type="checkbox" name="pizza" value="Vegetariană"> Pizza Vegetariană</label>
+                <img src="../images/pizza_selection.jpg" alt="Selectați Pizza">
+            </fieldset>
+            <fieldset>
+                <legend>Opțiuni</legend>
+                <label>Dimensiune Pizza:</label><br>
+                <label><input type="checkbox" name="size" value="mică"> Mică</label><br>
+                <label><input type="checkbox" name="size" value="medie"> Medie</label><br>
+                <label><input type="checkbox" name="size" value="mare"> Mare</label><br>
+                <label>Grosime Blat:</label><br>
+                <label><input type="checkbox" name="crust" value="subțire"> Subțire</label><br>
+                <label><input type="checkbox" name="crust" value="mediu"> Mediu</label><br>
+                <label><input type="checkbox" name="crust" value="gros"> Gros</label><br>
+                <label>Topping-uri:</label><br>
+                <label><input type="checkbox" name="topping" value="ardei"> Ardei</label><br>
+                <label><input type="checkbox" name="topping" value="porumb"> Porumb</label><br>
+                <label><input type="checkbox" name="topping" value="ciuperci"> Ciuperci</label><br>
+                <label><input type="checkbox" name="topping" value="salam"> Salam</label><br>
+                <label><input type="checkbox" name="topping" value="roșii"> Roșii</label><br>
+                <label><input type="checkbox" name="topping" value="brânză"> Brânză</label>
+                <img src="../images/pizza_options.jpg" alt="Opțiuni Pizza">
+            </fieldset>
+            <fieldset>
+                <legend>Informații Client</legend>
+                <label>Nume: <input type="text" name="nume"></label><br>
+                <label>Adresă: <input type="text" name="adresă"></label><br>
+                <label>Număr Interfon: <input type="text" name="interfon"></label><br>
+                <label>Telefon: <input type="text" name="telefon"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Metodă de Plată</legend>
+                <label><input type="radio" name="plată" value="numerar"> Numerar la livrare</label><br>
+                <label><input type="radio" name="plată" value="card"> Card de credit (Visa, Mastercard etc.)</label>
+            </fieldset>
+            <button type="submit">Trimite</button>
+            <button type="reset">Anulează</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pizzeria Francesca. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
